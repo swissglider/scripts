@@ -20,7 +20,7 @@ sudo apt -y autoremove
 sudo apt clean
 
 #install additionals
-sudo apt install -y openssh-server terminator
+sudo apt install -y openssh-server terminator nemo
 
 #update chrome
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
