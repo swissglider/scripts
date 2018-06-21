@@ -20,7 +20,7 @@ sudo apt -y autoremove
 sudo apt clean
 
 #install additionals
-sudo apt install -y openssh-server
+sudo apt install -y openssh-server terminator
 
 #update chrome
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -28,3 +28,14 @@ sudo apt install -y openssh-server
 #sudo apt update
 #sudo apt install google-chrome-stable
 #sudo apt --only-upgrade install google-chrome-stable
+
+#install development environment
+# ToDo:
+# install visual code studio
+# install vcs plugins and configuration
+# install firefox and configure as developer
+# install docker
+# install docker compose
+# install python docker env
+# install node docker env
+# ev. install virtualbox
