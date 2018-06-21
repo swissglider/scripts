@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # how to use this Script:
-# 
+# wget -O - https://git.io/fCxqS | bash
 
 #update system
 sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y
