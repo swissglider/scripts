@@ -43,13 +43,24 @@ code --install-extension ms-python.python
 code --install-extension tht13.rst-vscode
 code --install-extension azaugg.vscode-python-docstring
 
+# install atom / platformio
+sudo add-apt-repository -y ppa:webupd8team/atom
+sudo apt update -y
+sudo apt install -y atom clang
+
+apm install autocomplete-clang
+apm install platformio-ide
+
+# install arduino ide
+sudo apt install -y arduino
+sudo adduser $USER dialout
+
+# install virutalbox
+sudo apt install -y virtualbox virtualbox-qt virtualbox-dkms
+
 #install development environment
 # ToDo:
-# install visual code studio
-# install vcs plugins and configuration
 # install python docker env
 # install node docker env
-# ev. install virtualbox 
-# install atom with plugins arduino
-# install arduino edi
 # HTML Entwicklungsumgebung
+# uninstall script
