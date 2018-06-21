@@ -31,7 +31,17 @@ sudo apt -y update
 sudo apt install -y code # or code-insiders
 
 code --install-extension peterjausovec.vscode-docker
-
+code --install-extension hookyqr.beautify
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension ms-ceintl.vscode-language-pack-de
+code --install-extension kenhowardpdx.vscode-gist
+code --install-extension stephanvs.dot
+code --install-extension joaompinto.vscode-graphviz
+code --install-extension davidanson.vscode-markdownlint
+code --install-extension jebbs.plantuml
+code --install-extension ms-python.python
+code --install-extension tht13.rst-vscode
+code --install-extension azaugg.vscode-python-docstring
 
 #install development environment
 # ToDo:
