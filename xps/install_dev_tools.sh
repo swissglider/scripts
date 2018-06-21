@@ -58,6 +58,10 @@ sudo adduser $USER dialout
 # install virutalbox
 sudo apt install -y virtualbox virtualbox-qt virtualbox-dkms
 
+
+sudo apt -y autoremove
+sudo apt clean
+
 #install development environment
 # ToDo:
 # install python docker env
