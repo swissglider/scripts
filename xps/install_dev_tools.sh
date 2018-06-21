@@ -17,6 +17,12 @@ sudo gpasswd -aG $USER docker
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
+# install etcher
+echo "deb https://dl.bintray.com/resin-io/debian stable etcher" | sudo tee /etc/apt/sources.list.d/etcher.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+sudo apt-get update
+sudo apt-get install -y etcher-electron
+
 
 #install development environment
 # ToDo:
@@ -27,8 +33,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 # ev. install virtualbox 
 # install atom with plugins arduino
 # install arduino edi
-# IP Scann Tool
 # OpenVPN client
-# Etcher oder so
 # TreeSize oder soo
 # HTML Entwicklungsumgebung
