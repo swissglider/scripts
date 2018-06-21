@@ -20,8 +20,17 @@ sudo chmod +x /usr/local/bin/docker-compose
 # install etcher
 echo "deb https://dl.bintray.com/resin-io/debian stable etcher" | sudo tee /etc/apt/sources.list.d/etcher.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
-sudo apt-get update
-sudo apt-get install -y etcher-electron
+sudo apt -y update
+sudo apt install -y etcher-electron
+
+# install vsc
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt -y update
+sudo apt install -y code # or code-insiders
+
+code --install-extension peterjausovec.vscode-docker
 
 
 #install development environment
@@ -33,6 +42,4 @@ sudo apt-get install -y etcher-electron
 # ev. install virtualbox 
 # install atom with plugins arduino
 # install arduino edi
-# OpenVPN client
-# TreeSize oder soo
 # HTML Entwicklungsumgebung
