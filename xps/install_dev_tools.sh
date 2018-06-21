@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # how to use this Script:
-# wget -O - https://git.io/fCxqS | bash
+# wget -O - https://git.io/flFB9 | bash
 
 #install development environment
 # ToDo:
