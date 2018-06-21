@@ -12,4 +12,12 @@
 # install docker compose
 # install python docker env
 # install node docker env
-# ev. install virtualbox
+# ev. install virtualbox 
+# install atom with plugins arduino
+# install arduino edi
+# FileZilla
+# IP Scann Tool
+# OpenVPN client
+# Etcher oder so
+# TreeSize oder soo
+# HTML Entwicklungsumgebung
