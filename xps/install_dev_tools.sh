@@ -5,6 +5,7 @@
 
 
 sudo apt install -y firefox language-pack-de-base
+sudo apt install -y filezilla
 
 # install docker
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -26,7 +27,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 # ev. install virtualbox 
 # install atom with plugins arduino
 # install arduino edi
-# FileZilla
 # IP Scann Tool
 # OpenVPN client
 # Etcher oder so
