@@ -59,8 +59,9 @@ sudo adduser $USER dialout
 sudo apt install -y virtualbox virtualbox-qt virtualbox-dkms
 
 
+sudo apt -y purge
 sudo apt -y autoremove
-sudo apt clean
+sudo apt -y clean
 
 #install development environment
 # ToDo:
