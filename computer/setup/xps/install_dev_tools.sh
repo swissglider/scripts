@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# installs all needed development tools for Ubuntu
+
 sudo apt install -y firefox language-pack-de-base
 sudo apt install -y filezilla
 
