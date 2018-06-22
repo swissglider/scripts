@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# updates and install needed packages for ubuntu
+
 #update system
 sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y
 
