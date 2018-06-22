@@ -1,11 +1,8 @@
 # scripts
 This repository is for several scripts I use
 
-## Computer
+## Computer / Setup
 Scripts to setup / install / remove / etc Computers
-
-### Setup
-Scripts to setup / install / clean Computers
 
 #### Dell XPS Developer Laptop
 Scripts to set up the Dell XPS Developer Laptop  
