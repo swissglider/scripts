@@ -53,7 +53,7 @@ git config --global user.email "npm@mailschweiz.com"
 git config --global user.name "swissglider"
 
 # add ssh key to github
-ssh-keygen -t rsa -b 4096 -C "npm@mailschweiz.com" # to ~/.ssh/github_id_rsa .
+ssh-keygen -t rsa -b 4096 -C "npm@mailschweiz.com" # to ~/.ssh/github_id_rsa
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/github_id_rsa
 
