@@ -5,6 +5,9 @@
 sudo apt install -y firefox language-pack-de-base
 sudo apt install -y filezilla
 
+# install pip
+sudo apt install -y python-pip python3-pip
+
 # install docker
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -40,6 +43,11 @@ code --install-extension jebbs.plantuml
 code --install-extension ms-python.python
 code --install-extension tht13.rst-vscode
 code --install-extension azaugg.vscode-python-docstring
+code --install-extension ms-python.python
+
+/usr/bin/python2.7 -m pip install -U pylint --user
+ /usr/bin/python3.6 -m pip install -U pylint --user
+
 
 # install atom / platformio
 sudo add-apt-repository -y ppa:webupd8team/atom
