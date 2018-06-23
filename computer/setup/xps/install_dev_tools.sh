@@ -47,7 +47,9 @@ code --install-extension ms-python.python
 code --install-extension yzhang.markdown-all-in-one
 
 /usr/bin/python2.7 -m pip install -U pylint --user
- /usr/bin/python3.6 -m pip install -U pylint --user
+/usr/bin/python3.6 -m pip install -U pylint --user
+
+git config --global user.email "guido@diener.mobi"
 
 
 # install atom / platformio
