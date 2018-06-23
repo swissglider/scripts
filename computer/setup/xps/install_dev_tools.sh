@@ -44,6 +44,7 @@ code --install-extension ms-python.python
 code --install-extension tht13.rst-vscode
 code --install-extension azaugg.vscode-python-docstring
 code --install-extension ms-python.python
+code --install-extension yzhang.markdown-all-in-one
 
 /usr/bin/python2.7 -m pip install -U pylint --user
  /usr/bin/python3.6 -m pip install -U pylint --user
