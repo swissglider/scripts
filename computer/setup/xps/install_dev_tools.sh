@@ -50,7 +50,7 @@ code --install-extension yzhang.markdown-all-in-one
 /usr/bin/python3.6 -m pip install -U pylint --user
 
 git config --global user.email "npm@mailschweiz.com"
-git config --global user.name "swissglider" 
+git config --global user.name "swissglider"
 
 
 # install atom / platformio
