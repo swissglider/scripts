@@ -69,6 +69,10 @@ sudo apt -y purge
 sudo apt -y autoremove
 sudo apt -y clean
 
+# Create environment
+mkdir ~/
+export DEV_PATH=/home/diener/developer
+
 #install development environment
 # ToDo:
 # install python docker env
