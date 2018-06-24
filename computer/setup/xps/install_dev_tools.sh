@@ -48,7 +48,7 @@ code --install-extension yzhang.markdown-all-in-one
 code --install-extension himanoa.python-autopep8
 
 /usr/bin/python2.7 -m pip install -U pylint --user
-/usr/bin/python3.6 -m pip install -U pylint --user
+/usr/bin/python3.6 -m pip install -U pep8 --user
 
 git config --global user.email "npm@mailschweiz.com"
 git config --global user.name "swissglider"
