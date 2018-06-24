@@ -30,6 +30,7 @@ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 sudo apt -y update
 sudo apt install -y code # or code-insiders
+sudo apt install -y python-autopep8
 
 code --install-extension peterjausovec.vscode-docker
 code --install-extension hookyqr.beautify
@@ -48,7 +49,13 @@ code --install-extension yzhang.markdown-all-in-one
 code --install-extension himanoa.python-autopep8
 
 /usr/bin/python2.7 -m pip install -U pylint --user
+/usr/bin/python3.6 -m pip install -U pylint --user
+
+/usr/bin/python2.7 -m pip install -U pep8 --user
 /usr/bin/python3.6 -m pip install -U pep8 --user
+
+/usr/bin/python2.7 -m pip install --upgrade autopep8
+/usr/bin/python3.6 -m pip install --upgrade autopep8
 
 git config --global user.email "npm@mailschweiz.com"
 git config --global user.name "swissglider"
