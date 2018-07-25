@@ -6,4 +6,4 @@ Scripts to setup / install / remove / etc Computers
 
 #### Dell XPS Developer Laptop
 Scripts to set up the Dell XPS Developer Laptop  
-[Readme.md](https://github.com/swissglider/scripts/tree/master/computer/setup/xps)
+[Readme.md](https://github.com/swissglider/scripts_tutorials/tree/master/computer/setup/Ubuntu%20-%20VMWare)
