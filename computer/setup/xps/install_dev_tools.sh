@@ -97,3 +97,6 @@ export DEV_PATH=/home/diener/developer
 # install node docker env
 # HTML Entwicklungsumgebung
 # uninstall script
+
+#install global pip libraries
+pip install virtualenv
