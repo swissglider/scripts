@@ -79,6 +79,9 @@ apm install platformio-ide
 sudo apt install -y arduino
 sudo adduser $USER dialout
 
+# install virtual env
+sudo apt install -y virtualenv
+
 # install virutalbox
 sudo apt install -y virtualbox virtualbox-qt virtualbox-dkms
 
@@ -97,6 +100,3 @@ export DEV_PATH=/home/diener/developer
 # install node docker env
 # HTML Entwicklungsumgebung
 # uninstall script
-
-#install global pip libraries
-pip install virtualenv
