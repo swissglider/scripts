@@ -10,5 +10,5 @@ Scripts to set up the Dell XPS Developer Laptop
 
 
 #### Ubuntu VMWare Desktop
-Scripts to set up the Ubuntu VMWare Desktop
+Scripts to set up the Ubuntu VMWare Desktop  
 [Readme.md](https://github.com/swissglider/scripts_tutorials/tree/master/computer/setup/Ubuntu%20-%20VMWare)
