@@ -71,6 +71,7 @@ code --install-extension abusaidm.html-snippets
 code --install-extension ecmel.vscode-html-css
 code --install-extension tht13.html-preview-vscode
 code --install-extension techer.open-in-browser
+code --install-extension ms-python.python
 
 /usr/bin/python2.7 -m pip install -U pylint --user
 /usr/bin/python3.6 -m pip install -U pylint --user
