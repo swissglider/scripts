@@ -101,3 +101,7 @@ export DEV_PATH=/home/diener/developer
 # install node docker env
 # HTML Entwicklungsumgebung
 # uninstall script
+
+# Networktools
+sudo apt install -y network-manager-openvpn-gnome
+sudo apt install -y netdiscover
