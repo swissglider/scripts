@@ -105,3 +105,7 @@ export DEV_PATH=/home/diener/developer
 # Networktools
 sudo apt install -y network-manager-openvpn-gnome
 sudo apt install -y netdiscover
+sudo apt-add-repository -y ppa:bablu-boy/nutty-daily
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt-get install -y nutty
