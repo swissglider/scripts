@@ -105,3 +105,6 @@ export DEV_PATH=/home/diener/developer
 # Networktools
 sudo apt install -y network-manager-openvpn-gnome
 sudo apt install -y netdiscover
+
+#vlc
+sudo apt install -y vlc libxvidcore4 libfaac0
