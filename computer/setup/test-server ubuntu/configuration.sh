@@ -28,4 +28,4 @@ systemctl restart systemd-logind.service
 ##
 
 netplan apply
-
+reboot
