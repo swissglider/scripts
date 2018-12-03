@@ -14,6 +14,10 @@ echo 'HandleLidSwitch=lock' >> /etc/systemd/logind.conf
 echo 'HandleLidSwitchDocker=lock' >> /etc/systemd/logind.conf
 systemctl restart systemd-logind.service
 
+# enable su for ssh
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+service ssh restart
+
 ## change the /etc/netplan/50-cloud-init.yaml file and add the following entries:
 ## network:
 ##     ethernets:
