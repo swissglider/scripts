@@ -6,3 +6,6 @@ Scripts to set up the Dell XPS Developer Laptop
   ```wget -O - https://git.io/f4IUe | bash```
 - install_dev_tools.sh *(installs all needed development tools for Ubuntu)*  
   ```wget -O - https://git.io/f4IUJ | bash```
+  
+  ## Display Link
+  https://github.com/AdnanHodzic/displaylink-debian
