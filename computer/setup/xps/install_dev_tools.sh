@@ -114,3 +114,6 @@ sudo apt install -y vlc libxvidcore4 libfaac0
 sudo apt install -y libdvdnav4 libdvdread4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
 sudo apt install -y ubuntu-restricted-extras
 
+# install sshfs
+sudo apt install sshfs
+
