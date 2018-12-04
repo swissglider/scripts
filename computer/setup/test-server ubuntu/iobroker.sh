@@ -18,6 +18,10 @@ systemctl daemon-reload
 systemctl enable iobroker
 systemctl start iobroker
 
+iobroker update
+iobroker upgrade
+
 ##-----------------------------------------------------------------------
 ## install the following adapter:
 ## - 
+iobroker add influxdb
