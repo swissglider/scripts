@@ -17,6 +17,7 @@ sudo npm install iobroker --unsafe-perm
 systemctl daemon-reload
 systemctl enable iobroker
 systemctl start iobroker
+sudo systemctl enable iobroker.service
 
 iobroker update
 iobroker upgrade
@@ -24,4 +25,9 @@ iobroker upgrade
 ##-----------------------------------------------------------------------
 ## install the following adapter:
 ## - 
-iobroker add influxdb
+iobroker add influxdb --host test
+iobroker add node-red --host test  (node-red-contrib-huemagic)
+# iobroker add hue  --host test
+
+
+systemctl restart iobroker
