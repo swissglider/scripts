@@ -12,11 +12,12 @@
 wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.1_amd64.deb
 sudo dpkg -i influxdb_1.7.1_amd64.deb
 service influxdb start
+systemctl enable influxdb
 
-wget https://dl.influxdata.com/chronograf/releases/chronograf_1.7.3_amd64.deb
-dpkg -i chronograf_1.7.3_amd64.deb
+# wget https://dl.influxdata.com/chronograf/releases/chronograf_1.7.3_amd64.deb
+# dpkg -i chronograf_1.7.3_amd64.deb
 
-wget https://dl.influxdata.com/telegraf/releases/telegraf_1.9.0-1_amd64.deb
-dpkg -i telegraf_1.9.0-1_amd64.deb
-service telegraf start
-telegraf config > telegraf.conf
+# wget https://dl.influxdata.com/telegraf/releases/telegraf_1.9.0-1_amd64.deb
+# dpkg -i telegraf_1.9.0-1_amd64.deb
+# service telegraf start
+# telegraf config > telegraf.conf
