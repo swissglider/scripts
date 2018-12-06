@@ -1,3 +1,7 @@
+#!/bin/sh
+## install grafana on ubuntu
+## http://docs.grafana.org/installation/debian/
+
 # operate as su
 
 wget https://dl.grafana.com/oss/release/grafana_5.4.0_amd64.deb
