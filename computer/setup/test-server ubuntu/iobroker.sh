@@ -17,7 +17,6 @@ sudo npm install iobroker --unsafe-perm
 systemctl daemon-reload
 systemctl enable iobroker
 systemctl start iobroker
-sudo systemctl enable iobroker.service
 
 iobroker update
 iobroker upgrade
