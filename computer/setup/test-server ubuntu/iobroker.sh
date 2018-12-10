@@ -8,7 +8,7 @@
 # Using as root
 curl -sL https://deb.nodesource.com/setup_11.x | bash -
 apt install -y build-essential libavahi-compat-libdnssd-dev libudev-dev libpam0g-dev nodejs
-apt install -y avahi-daemon avahi-discover avahi-utils libnss-mdns mdns-scan
+# apt install -y avahi-daemon avahi-discover avahi-utils libnss-mdns mdns-scan
 reboot
 
 mkdir /opt/iobroker
