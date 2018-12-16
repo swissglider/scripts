@@ -4,6 +4,9 @@
 ## start as su (su -)
 ## ./configure_debian.sh <standard_user>
 
+# update time zone
+timedatectl set-timezone Europe/Zurich
+
 # update system
 apt update -y
 apt upgrade -y
