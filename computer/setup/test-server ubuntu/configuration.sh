@@ -1,8 +1,16 @@
 #!/bin/sh
 
+# make su available and also for ssh
+sudo su passwd
+sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# change root bash behaviors
+sudo cp .bashrc /root/
+
 ## usage:
 ## start as su (su -)
 ## ./configure_debian.sh <standard_user>
+su -
 
 # update time zone
 timedatectl set-timezone Europe/Zurich
@@ -17,10 +25,6 @@ echo 'HandleLidSwitch=lock' >> /etc/systemd/logind.conf
 echo 'HandleLidSwitchDocker=lock' >> /etc/systemd/logind.conf
 systemctl restart systemd-logind.service
 
-# enable su for ssh
-sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-service ssh restart
-
 ## change the /etc/netplan/50-cloud-init.yaml file and add the following entries:
 ## network:
 ##     ethernets:
@@ -34,5 +38,5 @@ service ssh restart
 ##     version: 2
 ##
 
-netplan apply
+## netplan apply
 reboot
