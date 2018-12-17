@@ -17,9 +17,7 @@ su -
 timedatectl set-timezone Europe/Zurich
 
 # update system
-apt update -y
-apt upgrade -y
-apt dist-upgrade -y
+apt update -y && apt upgrade -y && apt dist-upgrade -y
 
 # change closing Laptop to be locked
 echo 'HandleLidSwitch=lock' >> /etc/systemd/logind.conf
