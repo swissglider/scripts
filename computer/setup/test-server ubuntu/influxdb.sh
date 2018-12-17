@@ -9,8 +9,9 @@
 # source /etc/lsb-release
 # echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 # apt update -y && sudo apt-get install influxdb influxdb-client -y
-wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.1_amd64.deb
-sudo dpkg -i influxdb_1.7.1_amd64.deb
+# https://portal.influxdata.com/downloads
+wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.2_amd64.deb
+sudo dpkg -i influxdb_1.7.2_amd64.deb
 service influxdb start
 systemctl enable influxdb
 
