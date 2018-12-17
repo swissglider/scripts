@@ -3,6 +3,7 @@
 # make su available and also for ssh
 sudo su passwd
 sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+sudo service ssh restart
 
 # change root bash behaviors
 sudo cp .bashrc /root/
