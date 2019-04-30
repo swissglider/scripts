@@ -24,4 +24,6 @@ $sort($each(Account.Order.Product{Description.Colour: $average(Price)}, function
 Account.Order.Product{Description.Colour: $average(Price)} ~> $each(function($v, $k){{'color': $k, 'avg': $v}}) ~> $sort(function($l, $r) {$l.avg > $r.avg})
 
 Account.Order.Product[Description.Colour!='Purple' and Description.Weight>0.6]{Description.Colour: $average(Price)} ~> $each(function($v, $k){{'color': $k, 'avg': $v}}) ~> $sort(function($l, $r) {$l.avg > $r.avg})
+
+Account.Order.Product{Description.Colour:{'avg': $average(Price), 'Total Quantity': $sum(Quantity), 'Prod. Name': `Product Name`}} ~> $each(function($v, $k) {$merge([$v,{'color': $k}])}) ~> $sort(function($l, $r) {$l.avg > $r.avg})
 ```
