@@ -1,4 +1,8 @@
 # JSONata samples
+
+[JSONata Test Umgebung](http://try.jsonata.org/)  
+[JSONata Dokumentation](http://docs.jsonata.org/overview)
+
 ```
 {'price': $average(Account.Order[*].Product[*].Price) & ' CHF'}
 
