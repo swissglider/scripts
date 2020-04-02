@@ -33,3 +33,10 @@ sudo apt update -y
 sudo apt install grafana -y
 sudo systemctl daemon-reload
 sudo systemctl enable grafana-server.service
+
+# Telegraf
+wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+source /etc/lsb-release
+echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+sudo apt install telegraf -y
+sudo systemctl start telegraf
