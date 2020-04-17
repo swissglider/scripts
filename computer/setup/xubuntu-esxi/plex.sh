@@ -13,14 +13,23 @@ sudo apt upgrade -y
 sudo apt install exfat-fuse exfat-utils -y
 
 # Install samba
-#https://ubuntu.com/tutorials/install-and-configure-samba#1-overview
+# https://ubuntu.com/tutorials/install-and-configure-samba#1-overview
+# folow: https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/
 sudo apt install samba -y
+mkdir /mnt/external
+sudo groupadd external
+sudo usermod -aG external <<username>>
+sudo chown -R :external /mnt/external
+
+# add the external hd to teh /etc/fstab
+..
 # edit /etc/samba/smb.conf and add the following on the end
 # [external]
 #   comment = external HD
-#   path = /media/diener/external
+#   path = /mnt/external
 #   read only = no
 #   browsable = yes
 sudo service smbd restart
 sudo ufw allow samba
 sudo smbpasswd -a username
+reboot
