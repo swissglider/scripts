@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VMWares on ESXI
+Comment=vmrc script that shows all the vmwares on esxi
+Exec=/usr/bin/vmrc -H <ip without brackets> -U root -P <password without klammern>
+Terminal=false
+Icon=vmware-vmrc
+Type=Application
+Categories=VMWARE,virtual,System
+StartupNotify=true
+Keywords=VMWARE,virtual
