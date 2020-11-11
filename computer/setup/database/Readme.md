@@ -7,3 +7,6 @@ Do not install it as root
 * https://grafana.com/docs/grafana/latest/installation/debian/
 * https://docs.influxdata.com/telegraf/v1.14/introduction/installation/
 * https://computingforgeeks.com/how-to-monitor-vmware-esxi-with-grafana-and-telegraf/
+
+### for 1.8.3
+* https://portal.influxdata.com/downloads/
