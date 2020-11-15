@@ -1,12 +1,11 @@
 #!/bin/bash
 
 cd
-sudo apt update -y
-sudo apt upgrade -y
+sudo apt update -y ; sudo apt full-upgrade -y ; sudo apt autoremove -y ; sudo apt autoclean -y ; sudo apt clean -y
 
 #node.js
 #######################################################################
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 #redis
