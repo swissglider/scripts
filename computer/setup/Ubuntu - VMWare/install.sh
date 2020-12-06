@@ -3,7 +3,7 @@
 # updates and install needed packages for ubuntu
 
 #update system
-sudo apt update -y && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y
+sudo apt update -y && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo apt clean -y
 
 # install openssh server
 sudo apt install -y openssh-server
