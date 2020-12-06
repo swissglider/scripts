@@ -15,7 +15,7 @@ sudo apt -y autoremove
 sudo apt clean
 
 #install additionals
-sudo apt install -y terminator nemo nmap zenmap baobab
+sudo apt install -y terminator nemo baobab curl
 
 # installs all needed development tools for Ubuntu
 
@@ -23,7 +23,17 @@ sudo apt install -y firefox language-pack-de-base
 sudo apt install -y filezilla
 
 # install pip
-sudo apt install -y python-pip python3-pip
+sudo apt install -y python3-pip
+
+# install nodejs
+sudo apt-get install gcc g++ make
+curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# install yarn
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
 
 # install docker
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -50,7 +60,6 @@ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 sudo apt -y update
 sudo apt install -y code # or code-insiders
-sudo apt install -y python-autopep8
 
 code --install-extension peterjausovec.vscode-docker
 code --install-extension hookyqr.beautify
@@ -95,11 +104,6 @@ git config --global credential.helper store
 sudo apt install gdebi-core
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi -n google-chrome-stable_current_amd64.deb
-
-# install atom / platformio
-sudo add-apt-repository -y ppa:webupd8team/atom
-sudo apt update -y
-sudo apt install -y atom clang
 
 apm install autocomplete-clang
 apm install platformio-ide
